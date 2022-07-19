@@ -12,6 +12,7 @@
 		489602CC2877BEF400A371E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489602CA2877BEF400A371E9 /* Main.storyboard */; };
 		489602D12877BEF900A371E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489602CF2877BEF900A371E9 /* LaunchScreen.storyboard */; };
 		489602D92877C7C700A371E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489602D82877C7C700A371E9 /* Assets.xcassets */; };
+		489602DC288675C100A371E9 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489602DB288675C100A371E9 /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		489602D02877BEF900A371E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		489602D22877BEF900A371E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489602D82877C7C700A371E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		489602DB288675C100A371E9 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		489602C32877BEF400A371E9 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				489602DA288675AC00A371E9 /* Explore */,
 				489602C42877BEF400A371E9 /* AppDelegate.swift */,
 				489602C62877BEF400A371E9 /* SceneDelegate.swift */,
 				489602CA2877BEF400A371E9 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				489602D22877BEF900A371E9 /* Info.plist */,
 			);
 			path = LetsEat;
+			sourceTree = "<group>";
+		};
+		489602DA288675AC00A371E9 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				489602DB288675C100A371E9 /* ExploreViewController.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				489602C52877BEF400A371E9 /* AppDelegate.swift in Sources */,
 				489602C72877BEF400A371E9 /* SceneDelegate.swift in Sources */,
+				489602DC288675C100A371E9 /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

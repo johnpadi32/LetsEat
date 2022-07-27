@@ -20,6 +20,7 @@
 		489602E9288B6D3700A371E9 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489602E8288B6D3700A371E9 /* ExploreCell.swift */; };
 		489602EE288FCE4600A371E9 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489602ED288FCE4600A371E9 /* LocationViewController.swift */; };
 		489602F0288FD14000A371E9 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 489602EF288FD14000A371E9 /* Locations.plist */; };
+		489602F22891191A00A371E9 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489602F12891191A00A371E9 /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		489602E8288B6D3700A371E9 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		489602ED288FCE4600A371E9 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		489602EF288FD14000A371E9 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		489602F12891191A00A371E9 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				489602EF288FD14000A371E9 /* Locations.plist */,
+				489602F12891191A00A371E9 /* LocationDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				489602C72877BEF400A371E9 /* SceneDelegate.swift in Sources */,
 				489602DC288675C100A371E9 /* ExploreViewController.swift in Sources */,
 				489602E6288A8ED700A371E9 /* ExploreDataManager.swift in Sources */,
+				489602F22891191A00A371E9 /* LocationDataManager.swift in Sources */,
 				489602EE288FCE4600A371E9 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

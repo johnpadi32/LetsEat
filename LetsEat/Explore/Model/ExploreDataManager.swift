@@ -17,13 +17,6 @@ class ExploreDataManager {
         }
     }
     
-    fileprivate func loadData() -> [[String:AnyObject]] {
-        guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"), let items = NSArray(contentsOfFile: path) else {
-            return [[:]]
-        }
-        return items as! [[String:AnyObject]]
-    }
-    
     func numberOfItems() -> Int {
         items.count
     }
@@ -31,4 +24,13 @@ class ExploreDataManager {
     func explore(at index:IndexPath) -> ExploreItem {
         items[index.item]
     }
+    
+    fileprivate func loadData() -> [[String:AnyObject]] {
+        guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"), let items = NSArray(contentsOfFile: path) else {
+            return [[:]]
+        }
+        return items as! [[String:AnyObject]]
+    }
+    
+
 }

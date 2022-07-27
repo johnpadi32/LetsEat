@@ -11,6 +11,8 @@ class LocationViewController: UIViewController, UITableViewDataSource {
 
     //MARK: - Properties
     
+    let manager = LocationDataManager()
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -20,17 +22,18 @@ class LocationViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        manager.fetch()
     }
     
     //MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        return manager.numberOfItems()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath)
-        cell.textLabel?.text = "A Cell"
+        cell.textLabel?.text = manager.locationItem(at: indexPath)
         return cell
     }
 

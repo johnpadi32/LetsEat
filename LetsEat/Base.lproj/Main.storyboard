@@ -444,10 +444,10 @@
             </objects>
             <point key="canvasLocation" x="4686" y="-206"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="4cY-e9-0Hd">
             <objects>
-                <viewController id="zjF-Kd-6D4" sceneMemberID="viewController">
+                <viewController id="zjF-Kd-6D4" customClass="LocationViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oCA-0B-ZCp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,6 +474,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zjF-Kd-6D4" id="qaV-1s-bKj"/>
+                                    <outlet property="delegate" destination="zjF-Kd-6D4" id="AcI-nh-A4j"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F9S-yP-G9m"/>
@@ -493,6 +497,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="gDK-lh-z7a"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Mwv-bB-mZg" id="pwL-kO-zQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRu-ma-PbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1ck-sk-08E" userLabel="Exit" sceneMemberID="exit"/>

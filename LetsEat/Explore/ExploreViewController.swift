@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ExploreViewController: UIViewController, UICollectionViewDelegate {
     
     //MARK: - Properties
     
@@ -22,24 +22,27 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initialize()
+    }
+
+}
+
+//MARK: - Private extension
+
+private extension ExploreViewController {
+    
+    func initialize() {
         manager.fetch()
     }
-    
-    //MARK: - Actions
     
     @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
         
     }
-    
-    
-    //MARK: - collectionViewHeader
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
-        return headerView
-    }
-    
-    //MARK: - CollectionViewDataSource
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return manager.numberOfItems()
@@ -53,6 +56,12 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
         
         return cell
     }
-
-
+    
+    //MARK: - collectionViewHeader
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        return headerView
+    }
+    
 }
